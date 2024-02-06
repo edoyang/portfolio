@@ -1,0 +1,65 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            border: 15px solid #EDF7FA50;
+            border-radius: 100%;
+            text-align: center;
+            object-fit: cover;
+            object-position: center;
+            min-width: 200px;
+            min-height: 200px;
+        }
+    }
+}
+
+.projects{
+    .project{
+        display: flex;
+        gap: 20px;
+        height: 200px;
+
+        .project-img{
+            background-color: #00000030;
+            min-width: 250px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border-radius: 6px;
+        }
+
+        .project-details{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .project-side{
+                display: flex;
+                text-align: center;
+                align-items: center;
+                gap: 10px;
+
+                .project-date{
+                    background-color: black;
+                    color: white;
+                    padding: 2px 15px;
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
+}
