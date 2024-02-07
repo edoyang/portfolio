@@ -1,0 +1,18 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--padding-sm);
+    gap: 5px;
+    font-size: var(--font-copyright);
+    
+    .brands{
+        display: flex;
+        gap: 20px;
+        
+    }
+
+
+}

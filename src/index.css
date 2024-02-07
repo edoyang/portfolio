@@ -7,6 +7,14 @@
 
   /* COLOR VARIABLES */
   --primary-button: #FF6464;
+
+  /* FONT VARIABLES */
+  --font-copyright: 14px;
+  --font-sm: 16px;
+  --font-md: 18px;
+  --font-lg: 26px;
+  --font-xl: 30px;
+  --font-title: 44px;
 }
 
 body, * {
@@ -15,8 +23,12 @@ body, * {
   box-sizing: border-box;
 }
 
-body > *{
-  padding: 0 var(--padding-lg);
+.padding-lg{
+  padding: var(--padding-lg);
+}
+
+.font-md{
+  font-size: var(--font-md);
 }
 
 .primary-button{
@@ -26,4 +38,9 @@ body > *{
   padding: var(--padding-primary);
   color: white;
   border-radius: 2px;
+}
+
+.vertical-line{
+  border: 1px solid #00000080;
+  min-height: 15px;
 }

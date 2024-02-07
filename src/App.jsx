@@ -1,58 +1,39 @@
 import "./App.scss";
+import Header from "./components/Header";
 import {Link} from "react-router-dom";
+import Project from './components/Project/index.jsx';
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
-    <header>
-      <a href="Work.js">Work</a>
-      <a href="Blog.js">Blog</a>
-      <a href="Contact.js">Contact</a>
-    </header>
-
+    <Header />
     <div className="hero">
       <div className="left">
         <h1 className="title">Hi, I am Edo, Web Developer</h1>
-        <p>Lorem</p>
-        <a href="#" ><button className="primary-button">Download Resume</button></a>
+        <p className="description">Hello! I'm an international IT student with a deep passion for web development and software engineering. Coding is more than my field of study, it's what I genuinely love doing. I strive for clean, efficient code that enhances software usability and functionality. Through exploring data algorithms, I've honed my problem-solving skills, aiming to innovate and solve real-world problems. My goal is to combine my coding skills and enthusiasm for technology to create impactful applications. Looking forward to making a difference in the tech world together.</p>
+        <a href="Resume.pdf" download><button className="primary-button">Download Resume</button></a>
       </div>
       <div className="right">
-        <img src="#" alt="??"></img>
+        <img src="hero.jpg" alt="hero"></img>
       </div>
     </div>
-
-    <div className="projects">
-      <p>Projects</p>
-      <div className="project">
-        <div className="project-img">
-          <img src="/" alt="example"></img>
-        </div>
-        <div className="project-details">
-          <h1 className="project-title">Designing dashboards</h1>
-          <div className="project-side">
-            <p className="project-date">2020</p>
-            <p className="project-tech">MERN</p>
+    <div className="blog">
+      <p>Recent Post here</p>
+      <div className="recent-post">
+        <div className="post">
+          <h2 className="post-title">Creating API on Dotnet</h2>
+          <div className="post-details">
+            <p className="post-date">2020</p>
+            <hr className="vertical-line"/>
+            <p className="post-detail">.NET Core</p>
           </div>
-          <p className="project-description">
-            Example
-          </p>
+          <p className="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eum, aliquam molestias reiciendis animi illum voluptatum accusamus culpa at cum similique quod ipsa iusto ad architecto sint delectus deserunt sed.</p>
         </div>
       </div>
     </div>
-
-    <div className="recent-post">
-      <h1>Recent Post here</h1>
-    </div>
-
-    <footer>
-      <div className="brands">
-        <a href="/">Facebook</a>
-        <a href="/">LinkedIn</a>
-        <a href="/">Instagram</a>
-        <a href="/">X</a>
-      </div>
-      <p>Credit for John</p>
-    </footer>
+    <Project />
+    <Footer />
     </>
   )
 }

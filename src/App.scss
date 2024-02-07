@@ -2,63 +2,79 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: var(--padding-lg);
 
     .left{
+        flex: 1;
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        .title{
+            font-size: var(--font-title);
+            font-weight: bold;
+        }
+
+        .description{
+            font-size: var(--font-sm);
+            text-wrap: balance;
+        }
+
+        a{
+            font-size: var(--font-md);
+        }
     }
 
 
     .right{
+        flex: 1;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
+
         img{
             border: 15px solid #EDF7FA50;
             border-radius: 100%;
             text-align: center;
             object-fit: cover;
             object-position: center;
-            min-width: 200px;
-            min-height: 200px;
+            width: 250px;
+            height: 250px;
         }
     }
 }
 
-.projects{
-    .project{
+.blog{
+    background-color: #EDF7FA;
+    padding: var(--padding-lg);
+    font-size: var(--font-md);
+
+    .recent-post{
         display: flex;
-        gap: 20px;
-        height: 200px;
-
-        .project-img{
-            background-color: #00000030;
-            min-width: 250px;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            border-radius: 6px;
-        }
-
-        .project-details{
+        margin-top: 20px;
+        
+        .post{
             display: flex;
             flex-direction: column;
-            gap: 20px;
-
-            .project-side{
+            gap: 10px;
+            background-color: white;
+            max-width: 400px;
+            padding: 25px;
+            
+            .post-title{
+                font-weight: bold;
+                font-size: var(--font-lg);
+            }
+            
+            .post-details{
                 display: flex;
-                text-align: center;
+                gap: 20px;
                 align-items: center;
-                gap: 10px;
+                font-size: var(--font-md);
+            }
 
-                .project-date{
-                    background-color: black;
-                    color: white;
-                    padding: 2px 15px;
-                    border-radius: 100px;
-                }
+            .post-description{
+                font-size: var(--font-sm);
             }
         }
     }

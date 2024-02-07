@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--font-md) var(--padding-lg);
+
+    .logo{
+        font-size: var(--font-md);
+        font-weight: bold;
+    }
+
+    .menu{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+
+        a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: var(--font-md);
+        }
+    }
+
+    .hamburger{
+        display: none;
+    }
+}
