@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px){
+    #root{
+        /* PADDING VARIABLES */
+        --padding-lg: 20px;
+        --padding-md: 10px;
+        --padding-sm: 5px;
+        --padding-primary: 10px 15px;
+    }
+
+    .hero {
+      flex-direction: column;
+  
+      .left, .right {
+        width: 100%;
+      }
+  
+      .left {
+        order: 2; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+  
+      .right {
+        order: 1; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%; 
+          max-width: 300px; 
+          height: auto;
+        }
+      }
+    }
+  }
+  
