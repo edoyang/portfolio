@@ -44,3 +44,33 @@ body, * {
   border: 1px solid #00000080;
   min-height: 15px;
 }
+
+.sliding-left {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.sliding-right {
+  animation: slideInFromRight 1s ease-in-out forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

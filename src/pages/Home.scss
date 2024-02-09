@@ -49,33 +49,21 @@
     padding: var(--padding-lg);
     font-size: var(--font-md);
 
-    .recent-post{
-        display: flex;
+    .recent-posts{
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        scroll-snap-type: x proximity; 
+        gap: 50px;
         margin-top: 20px;
-        
-        .post{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            background-color: white;
-            max-width: 400px;
-            padding: 25px;
-            
-            .post-title{
-                font-weight: bold;
-                font-size: var(--font-lg);
-            }
-            
-            .post-details{
-                display: flex;
-                gap: 20px;
-                align-items: center;
-                font-size: var(--font-md);
-            }
+        padding-bottom: 20px;
+    
+        &::-webkit-scrollbar {
+            display: none; 
+        }
 
-            .post-description{
-                font-size: var(--font-sm);
-            }
+        .post{
+            max-width: 400px;
         }
     }
 }

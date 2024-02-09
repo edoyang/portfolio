@@ -34,5 +34,13 @@
         }
       }
     }
+
+    .blog {
+      .recent-posts {
+        .post{
+          max-width: calc(100vw - var(--padding-lg) * 2);
+        }
+      }
+    }
   }
   

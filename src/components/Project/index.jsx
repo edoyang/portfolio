@@ -3,6 +3,15 @@ import React from 'react';
 import './style.scss';
 
 const Project = () => {
+  const renderDescriptionWithLineBreaks = (description) => {
+    return description.split('\n').map((line, index, array) => (
+      <React.Fragment key={index}>
+        {line}
+        {index < array.length - 1 && <br />}
+      </React.Fragment>
+    ));
+  };
+
   return (
     <div className="padding-lg">
       <p className='font-md'>Projects</p>
@@ -19,7 +28,9 @@ const Project = () => {
                   <p className="project-date">{project.date}</p>
                   <p className="project-tech">{project.tech}</p>
                 </div>
-                <p className="project-description">{project.description}</p>
+                <p className="project-description">
+                  {renderDescriptionWithLineBreaks(project.description)}
+                </p>
               </div>
             </div>
             {index < projects.length - 1 && <hr />}
