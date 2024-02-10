@@ -40,6 +40,11 @@ body, * {
   border-radius: 2px;
 }
 
+hr{
+  border: 1px solid #00000080;
+  margin: 20px 0;
+}
+
 .vertical-line{
   border: 1px solid #00000080;
   min-height: 15px;

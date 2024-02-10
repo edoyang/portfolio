@@ -14,6 +14,7 @@
             min-width: 250px;
             text-align: center;
             justify-content: center;
+            position: relative;
             align-items: center;
             display: flex;
             border-radius: 6px;
@@ -28,6 +29,53 @@
                 object-fit: cover;
                 object-position: center;
                 border-radius: 6px;
+            }
+
+            .options {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 2;
+                flex-direction: column; // To stack the links vertically
+                transition: opacity 0.3s ease; // Smooth transition for visibility
+                opacity: 0; // Start with options invisible
+              }
+        
+              &:hover {
+                .options {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 6px;
+                  background-color: rgba(0, 0, 0, 0.4);
+                  opacity: 1;
+                  gap: 10px;
+
+                  > * {
+                    border: 1px solid white;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                    color: white;
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-between;
+                    text-decoration: none;
+                    align-items: center;
+
+                    .link-text {
+                        font-size: var(--font-sm);
+                        color: white;
+                      }
+
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                  }
+                }
             }
         }
 
@@ -49,8 +97,12 @@
                 text-align: center;
                 align-items: center;
                 gap: 10px;
+                line-clamp: 1;
+                -webkit-line-clamp: 1;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                white-space: nowrap;
+
 
                 .project-date{
                     background-color: black;
@@ -62,6 +114,8 @@
 
                 .project-tech{
                     font-size: var(--font-md);
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
             }
 

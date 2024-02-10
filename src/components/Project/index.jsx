@@ -21,6 +21,16 @@ const Project = () => {
             <div className="project">
               <div className="project-img">
                 <img src={project.img || "/"} alt={project.title} />
+                <div className="options">                    
+                  <a href={project.repo} target='_blank'>
+                    <img src="repo.svg" alt="repo" />
+                    <span className="link-text">See Repositories</span> {/* Added span here */}
+                  </a>
+                  <a href={project.link} target='_blank'>
+                    <img src="live.svg" alt="live" />
+                    <span className="link-text">See Live Demo</span> {/* And here */}
+                  </a>
+                </div>
               </div>
               <div className="project-details">
                 <h1 className="project-title">{project.title}</h1>
