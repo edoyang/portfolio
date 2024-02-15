@@ -24,7 +24,7 @@
   --black: #FFFFFF; /* White for dark mode */
 }
 
-.projects > a{
+.projects .project > a{
   text-decoration: none;
   color: var(--black);
 }
