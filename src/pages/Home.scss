@@ -48,23 +48,28 @@
     background-color: #EDF7FA;
     padding: var(--padding-lg);
     font-size: var(--font-md);
+    background-color: var(--white);
+
 
     .recent-posts{
         flex-direction: row;
         flex-wrap: nowrap; 
         overflow-x: auto; 
-        scroll-snap-type: x proximity; 
+        scroll-snap-type: x mandatory; 
         gap: 50px;
         margin-top: 20px;
         padding-bottom: 20px;
+        
     
         &::-webkit-scrollbar {
             display: none; 
         }
 
         .post{
+            background-color: var(--white);
             max-width: 400px;
             height: max-content;
+            border: 1px solid var(--black);
         }
     }
 }

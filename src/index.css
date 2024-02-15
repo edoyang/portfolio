@@ -7,6 +7,8 @@
 
   /* COLOR VARIABLES */
   --primary-button: #FF6464;
+  --white: #FFFFFF;
+  --black: #212121;
 
   /* FONT VARIABLES */
   --font-copyright: 14px;
@@ -17,10 +19,24 @@
   --font-title: 44px;
 }
 
+.dark-mode {
+  --white: #212121; /* Black for dark mode */
+  --black: #FFFFFF; /* White for dark mode */
+}
+
+.projects > a{
+  text-decoration: none;
+  color: var(--black);
+}
+
+
+
 body, * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
+  background-color: var(--white)  ;
+  color: var(--black);
 }
 
 .padding-lg{
@@ -41,32 +57,17 @@ body, * {
 }
 
 hr{
-  border: 1px solid #00000080;
+  border: 1px solid var(--black);
   margin: 20px 0;
 }
 
 .vertical-line{
-  border: 1px solid #00000080;
+  border: 1px solid var(--black);
   min-height: 15px;
 }
 
 .sliding-left {
   animation: slideInFromLeft 1s ease-in-out forwards;
-}
-
-.sliding-right {
-  animation: slideInFromRight 1s ease-in-out forwards;
-}
-
-@keyframes slideInFromRight {
-  from {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 @keyframes slideInFromLeft {

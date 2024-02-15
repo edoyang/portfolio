@@ -1,9 +1,11 @@
 .blog-page{
-    padding: var(--padding-lg);
+    padding: 0 var(--padding-lg) var(--padding-lg) var(--padding-lg);
 
     .recent-posts{
-        
+
         .post{
+            background-color: var(--white);
+
             padding: 25px 0;
         }
     }

@@ -4,7 +4,7 @@ import './Blog.scss';
 
 const Blog = () => {
   return (
-    <div className='blog-page sliding-right'>
+    <div className='blog-page sliding-left'>
       <h1>Blog</h1>
       <RecentPosts includeDividers={true} />
     </div>

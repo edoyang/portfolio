@@ -11,13 +11,15 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 10px;
-        background-color: white;
+        background-color: var(--white);
         padding: 25px;
         border-radius: 5px; 
+        min-height: 260px;
 
         .post-title {
             font-weight: bold;
             font-size: var(--font-lg);
+            min-height: 60px;
         }
 
         .post-details {
