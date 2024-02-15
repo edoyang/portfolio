@@ -38,7 +38,7 @@ const Header = () => {
   }, [isActive]); // Re-bind event listener if isActive changes
 
   return (
-    <div className='header'>
+    <div className='header' ref={headerRef}>
       <div className="logo">
         <Link to="/"><p>{text}<span className={`cursor ${cursorVisible ? 'blink' : ''}`}>|</span></p></Link>
       </div>

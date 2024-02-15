@@ -1,6 +1,7 @@
 import React from 'react';
 import { posts } from './index.js';
 import './style.scss';
+import { Link } from 'react-router-dom';
 
 const RecentPosts = ({ includeDividers = false }) => {
   return (

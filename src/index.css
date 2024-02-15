@@ -29,6 +29,10 @@
   color: var(--black);
 }
 
+.recent-posts a{
+  text-decoration: none;
+  color: var(--black);
+}
 
 
 body, * {
