@@ -7,7 +7,7 @@ const RecentPosts = ({ includeDividers = false }) => {
     <div className="recent-posts">
       {posts.map((post, index) => (
         <React.Fragment key={index}>
-          <div className="post">
+          <Link to={`/DisplayPost/${post.title}`} className="post">
             <h2 className="post-title">{post.title}</h2>
             <div className="post-details">
               <p className="post-date">{post.date}</p>
@@ -17,7 +17,7 @@ const RecentPosts = ({ includeDividers = false }) => {
             <p className="post-description">
               {post.description}
             </p>
-          </div>
+          </Link>
           {includeDividers && index < posts.length - 1 && <hr />}
         </React.Fragment>
       ))}
