@@ -1,4 +1,6 @@
-#root{
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+#root {
   /* PADDING VARIABLES */
   --padding-lg: 50px;
   --padding-md: 30px;
@@ -6,8 +8,8 @@
   --padding-primary: 10px 15px;
 
   /* COLOR VARIABLES */
-  --primary-button: #FF6464;
-  --white: #FFFFFF;
+  --primary-button: #ff6464;
+  --white: #ffffff;
   --black: #212121;
 
   /* FONT VARIABLES */
@@ -21,37 +23,38 @@
 
 .dark-mode {
   --white: #212121; /* Black for dark mode */
-  --black: #FFFFFF; /* White for dark mode */
+  --black: #ffffff; /* White for dark mode */
 }
 
-.projects .project > a{
+.projects .project > a {
   text-decoration: none;
   color: var(--black);
 }
 
-.recent-posts a{
+.recent-posts a {
   text-decoration: none;
   color: var(--black);
 }
 
-
-body, * {
+body,
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
-  background-color: var(--white)  ;
+  box-sizing: border-box;
+  background-color: var(--white);
   color: var(--black);
+  font-family: "Heebo", sans-serif;
 }
 
-.padding-lg{
+.padding-lg {
   padding: var(--padding-lg);
 }
 
-.font-md{
+.font-md {
   font-size: var(--font-md);
 }
 
-.primary-button{
+.primary-button {
   background-color: var(--primary-button);
   border: none;
   cursor: pointer;
@@ -60,12 +63,12 @@ body, * {
   border-radius: 2px;
 }
 
-hr{
+hr {
   border: 1px solid var(--black);
   margin: 20px 0;
 }
 
-.vertical-line{
+.vertical-line {
   border: 1px solid var(--black);
   min-height: 15px;
 }

@@ -1,0 +1,60 @@
+.display-project {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  > .project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    img {
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 10px;
+    }
+  }
+
+  .options {
+    display: flex;
+    justify-content: space-around;
+
+    > a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      transition: transform 0.3s;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      &:hover {
+        animation: bouncing 1s infinite;
+
+        @keyframes bouncing {
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+    @media (max-width: 450px) {
+      flex-direction: column;
+      gap: 2rem;
+
+      > a {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Digital Agency",
+    "date": "2023",
+    "tech": "HTML, CSS, JS PHP, Git",
+    "repo": "https://github.com/edoyang/digital-agency",
+    "link": "https://edoyang.github.io/digital-agency/",
+    "description": "Front-End: HTML, CSS, JS \n\n This project marks my initial foray into web development, where I transformed a Figma design into a fully functional website using HTML, CSS, and PHP. While the website focuses on frontend development, it showcases a clean and simple UI/UX that provides an appealing user experience. \n\n Key Learning Highlights: \n\n UI/UX Design: \n Developed a user-friendly interface based on a Figma design. \n HTML & CSS: Gained extensive experience in HTML and advanced CSS styling \n techniques, including SCSS. \n \n Frontend Focus: Although this project primarily involves frontend development, it allowed me to hone my skills in creating visually attractive and responsive web pages. \n \nThis project was a great learning experience that helped me build a strong foundation in web development and design principles.",
+    "img": "projects/ABCProperty.png"
+  },
+  {
+    "id": 2,
+    "title": "ABCProperty",
+    "date": "2020",
+    "tech": "HTML, CSS, JS, Node.js, Express, MongoDB, EJS, MVC, Vercel",
+    "repo": "https://github.com/edoyang/abcproperty-react",
+    "link": "https://edoyang.github.io/abcproperty-react/",
+    "description": "Front-End: HTML, CSS, JS \n Back-End: Node.js, Express, MongoDB \n\n A real estate website that allows users to search for properties, view property details, and contact the property owner. Users can also create an account and add properties to their favorites list. \n\n The website is responsive and mobile-friendly. It also has a user-friendly interface and a clean design. \n\n The website is built using the MERN stack. The front-end is built using HTML, CSS, and JavaScript. The back-end is built using Node.js, Express, and MongoDB. The website is hosted on Vercel. \n\n The website is built using the MVC architecture. The front-end is built using the EJS templating engine. The back-end is built using the Express framework. The database is built using MongoDB. The website is hosted on Vercel. \n\n The website is built using the MVC architecture. The front-end is built using the EJS templating engine. The back-end is built using the Express framework. The database is built using MongoDB. The website is hosted on Vercel. \n\n The website is built using the MVC architecture. The front-end is built using the EJS templating engine. The back-end is built using the Express framework. The database is built using MongoDB. The website is hosted on Vercel. \n\n The website is built using the MVC architecture. The front-end is built using the EJS templating engine. The back-end is built using the Express framework. The database is built using MongoDB. The website is hosted on Vercel. \n\n The website is built using the MVC architecture. The front-end is built using the EJS templating engine. The back-end is built using the Express framework. The database is built using MongoDB. The website is hosted on Vercel. \n\n The website is built using the MVC architecture. The front-end is built using the EJS templating engine. The back-end is built using the Express framework. The database is built using MongoDB. The website is hosted on Vercel. \n\n The website is built using the MVC architecture. The front-end is built using the EJS templating engine. The back-end is built using the Express framework. The database is built using MongoDB. The website is hosted on Vercel. \n\n The website is built using the MVC architecture. The front-end is built using the EJS templating engine. The back-end is built using the Express framework. The database is built using MongoDB. The",
+    "img": "projects/ABCProperty.png"
+  },
+  {
+    "id": 3,
+    "title": "Meraki Wrap",
+    "date": "2023",
+    "tech": "MongoDB, Express, React, Node.js, Git",
+    "repo": "https://github.com/edoyang/florist",
+    "link": "https://edoyang.github.io/florist/",
+    "description": "This project marks my first venture into React development, where I converted a Figma design into a dynamic web application using the MERN stack (MongoDB, Express, React, Node.js). The project features an appealing UI/UX, demonstrating my ability to translate design concepts into functional and engaging interfaces.\n\nKey Learning Highlights:\n\nReact Development: Gained hands-on experience with React, building a responsive and interactive frontend.\nBackend Integration: Explored various backend libraries, including Cloudinary for image management and JSON Web Token (jsonwebtoken) for authentication.\nFull-Stack Proficiency: Developed a comprehensive understanding of JavaScript libraries and frameworks, fueling my passion for full-stack development with the MERN stack.\n\nThis project was an exciting journey that enhanced my skills in both frontend and backend development, solidifying my enthusiasm for JavaScript technologies.",
+    "img": "projects/ABCProperty.png"
+  },
+  {
+    "id": 4,
+    "title": "Furniro.",
+    "date": "2024",
+    "tech": "MongoDB, Express.js, Node.js, React.js, HTML, Cascading Style Sheets (CSS), JavaScript, vercel",
+    "repo": "https://github.com/edoyang/furniro",
+    "link": "https://furniro-client.vercel.app/",
+    "description": "ABC Property is my first full-stack development project, created as part of a college assessment. The website is built using HTML, CSS, and JavaScript for the frontend, with Node.js and Express handling the backend. This project provided me with a solid foundation in web development before transitioning to more advanced frameworks like React. And now I translate all the code and design to react.\n\nKey Learning Highlights:\n\nFull-Stack Development: Gained practical experience in developing both frontend and backend components.\nHTML, CSS, and JavaScript: Enhanced my understanding of core web technologies and their applications in creating responsive and interactive web pages.\nNode.js and Express: Learned to build a robust backend, managing server-side logic and routing efficiently.\n\nWorking on ABC Property was an enjoyable experience that sparked my interest in full-stack development, serving as a stepping stone before delving into React and other advanced frameworks.",
+    "img": "projects/ABCProperty.png"
+  }
+]
