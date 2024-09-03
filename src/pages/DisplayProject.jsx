@@ -28,7 +28,7 @@ const DisplayProject = () => {
     <div className="padding-lg display-project">
       <h1 className="project-title">{project.title}</h1>
       <div className="project-image-container">
-        <img src={project.img} alt={project.title} />
+        <img src={`/${project.img}`} alt={project.title} />
       </div>
       <div className="project-details">
         <p className="project-date">{project.date}</p>
