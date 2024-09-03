@@ -36,11 +36,11 @@ const DisplayPost = () => {
       </div>
       <div className="options">
         <a href={project.repo} target="_blank" rel="noopener noreferrer">
-          <img src="/repo.svg" alt="repo" />
+          <img src="repo.svg" alt="repo" />
           <span className="link-text">See Repositories</span>
         </a>
         <a href={project.link} target="_blank" rel="noopener noreferrer">
-          <img src="/live.svg" alt="live" />
+          <img src="live.svg" alt="live" />
           <span className="link-text">See Live Demo</span>
         </a>
       </div>
