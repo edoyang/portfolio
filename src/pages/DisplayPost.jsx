@@ -28,21 +28,10 @@ const DisplayPost = () => {
     <div className="padding-lg display-project">
       <h1 className="project-title">{project.title}</h1>
       <div className="project-details">
-        <p className="project-date">{project.date}</p>
         <p className="project-tech">{project.tech}</p>
         <p className="project-description">
           {renderDescriptionWithLineBreaks(project.description)}
         </p>
-      </div>
-      <div className="options">
-        <a href={project.repo} target="_blank" rel="noopener noreferrer">
-          <img src="repo.svg" alt="repo" />
-          <span className="link-text">See Repositories</span>
-        </a>
-        <a href={project.link} target="_blank" rel="noopener noreferrer">
-          <img src="live.svg" alt="live" />
-          <span className="link-text">See Live Demo</span>
-        </a>
       </div>
     </div>
   );
