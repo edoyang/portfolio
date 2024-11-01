@@ -15,7 +15,7 @@ const Project = () => {
 
   return (
     <div className="padding-lg">
-      <p className="font-md">Projects</p>
+      <h2 className="font-title">Projects</h2>
       <div className="projects">
         {projects.map((project, index) => (
           <React.Fragment key={index}>

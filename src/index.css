@@ -26,6 +26,10 @@
   --black: #ffffff; /* White for dark mode */
 }
 
+* {
+  transition: 0.5s;
+}
+
 .projects .project > a {
   text-decoration: none;
   color: var(--black);
@@ -52,6 +56,26 @@ body,
 
 .font-md {
   font-size: var(--font-md);
+}
+
+.font-lg {
+  font-size: var(--font-lg);
+}
+
+.font-xl {
+  font-size: var(--font-xl);
+}
+
+.font-title {
+  font-size: var(--font-title);
+}
+
+.font-sm {
+  font-size: var(--font-sm);
+}
+
+.font-copyright {
+  font-size: var(--font-copyright);
 }
 
 .primary-button {

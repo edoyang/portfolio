@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   position: sticky;
   top: 0;
@@ -7,111 +7,118 @@
   padding: var(--font-md) var(--padding-lg);
   z-index: 10;
 
-  .logo{
-      font-size: var(--font-md);
-      font-weight: bold;
+  .logo {
+    font-size: var(--font-md);
+    font-weight: bold;
 
-      a{
-          color: var(--black);
-          text-decoration: none;
-      }
+    a {
+      color: var(--black);
+      text-decoration: none;
+    }
   }
 
-  .menu{
+  .menu {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: none;
+    position: relative;
+    background-color: transparent;
+
+    a {
+      color: var(--black);
+      font-weight: bold;
+      text-decoration: none;
+      font-size: var(--font-md);
+    }
+
+    .theme-switcher {
+      border: 2px solid var(--black);
+      border-radius: 100%;
+      padding: 5px;
       display: flex;
-      gap: 50px;
       align-items: center;
-      transition: none;
-      position: relative;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.5s ease-in-out;
 
-      a{
-          color: var(--black);
-          font-weight: bold;
-          text-decoration: none;
-          font-size: var(--font-md);
+      img {
+        margin: 0;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        user-select: none;
+        background-color: transparent;
       }
+    }
 
-      .theme-switcher{
-        border: 2px solid var(--black);
-        border-radius: 100%;
-        padding: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: transform 0.5s ease-in-out;
-        
-        img{
-          margin: 0;
-          padding: 0;
-          width: 20px;
-          height: 20px;
-          user-select: none; 
-        }
-      }      
-
-      @media screen and (max-width: 768px){
-          display: none;
-      }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   .hamburger {
-      display: none;
-      cursor: pointer;
-      flex-direction: column;
-      justify-content: space-around;
-      width: 30px;
-      height: 25px;
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
 
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: #333;
+      transition: all 0.3s ease-in-out;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+    }
+
+    &.active {
       span {
-        display: block;
-        height: 2px;
-        width: 100%;
-        background: #333;
-        transition: all 0.3s ease-in-out;
-      }
-
-      @media screen and (max-width: 768px) {
-        display: flex;
-      }
-
-      &.active {
-        span {
-          &:nth-child(1) {
-              transform: translateY(8px) rotate(45deg);
-          }
-          &:nth-child(2) {
-            opacity: 0;
-          }
-          &:nth-child(3) {
-              transform: translateY(-8px) rotate(-45deg);
-          }
+        &:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
         }
       }
+    }
   }
 
-  @media screen and (max-width: 768px){
-      .menu.active{
-          display: flex;
-          position: absolute;
-          top: 0;
-          right: 0;
-          flex-direction: column;
-          width: 50vw;
-          height: 100svh;
-          background-color: var(--white);
-          justify-content: center;
-          align-items: center;
-      }
+  @media screen and (max-width: 768px) {
+    .menu.active {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      flex-direction: column;
+      width: 50vw;
+      height: 100svh;
+      background-color: var(--white);
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 
 /* Global Styles for Blink Animation */
 @keyframes blink {
-0%, 100% { opacity: 1; }
-50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .cursor {
-animation: blink 1s step-start infinite;
+  animation: blink 1s step-start infinite;
 }
