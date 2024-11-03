@@ -57,11 +57,7 @@ const Header = () => {
           onClick={toggleTheme}
         >
           <img
-            src={
-              theme === "light"
-                ? "/portfolio/light-mode.svg"
-                : "/portfolio/dark-mode.svg"
-            }
+            src={theme === "light" ? "/light-mode.svg" : "/dark-mode.svg"}
             alt="theme"
           />
         </div>

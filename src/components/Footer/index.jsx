@@ -11,31 +11,19 @@ const Footer = () => {
     <footer>
       <div className="brands">
         <a href="https://www.facebook.com/edoyangz" target="_blank">
-          <img
-            src={`/portfolio/brands/Facebook${imageSuffix}.svg`}
-            alt="Facebook"
-          />
+          <img src={`/brands/Facebook${imageSuffix}.svg`} alt="Facebook" />
         </a>
         <a href="https://www.instagram.com/edoyangz/" target="_blank">
-          <img
-            src={`/portfolio/brands/Instagram${imageSuffix}.svg`}
-            alt="Instagram"
-          />
+          <img src={`/brands/Instagram${imageSuffix}.svg`} alt="Instagram" />
         </a>
         <a
           href="https://www.linkedin.com/in/edo-yang-574219249/"
           target="_blank"
         >
-          <img
-            src={`/portfolio/brands/Linkedin${imageSuffix}.svg`}
-            alt="Linkedin"
-          />
+          <img src={`/brands/Linkedin${imageSuffix}.svg`} alt="Linkedin" />
         </a>
         <a href="https://github.com/edoyang" target="_blank">
-          <img
-            src={`/portfolio/brands/Github${imageSuffix}.svg`}
-            alt="Github"
-          />
+          <img src={`/brands/Github${imageSuffix}.svg`} alt="Github" />
         </a>
       </div>
     </footer>
