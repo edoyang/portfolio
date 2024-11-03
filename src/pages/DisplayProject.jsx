@@ -28,7 +28,7 @@ const DisplayProject = () => {
     <div className="padding-lg display-project">
       <h1 className="project-title">{project.title}</h1>
       <div className="project-image-container">
-        <img src={`/portfolio/${project.img}`} alt={project.title} />
+        <img src={`/${project.img}`} alt={project.title} />
       </div>
       <div className="project-details">
         <p className="project-date">{project.date}</p>
@@ -39,11 +39,11 @@ const DisplayProject = () => {
       </div>
       <div className="options">
         <a href={project.repo} target="_blank" rel="noopener noreferrer">
-          <img src="/portfolio/repo.svg" alt="repo" />
+          <img src="/repo.svg" alt="repo" />
           <span className="link-text">See Repositories</span>
         </a>
         <a href={project.link} target="_blank" rel="noopener noreferrer">
-          <img src="/portfolio/live.svg" alt="live" />
+          <img src="/live.svg" alt="live" />
           <span className="link-text">See Live Demo</span>
         </a>
       </div>
