@@ -7,7 +7,7 @@ import { useTheme } from "../../utils/DarkMode";
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const words = ["Web Developer", "Fullstack Developer", "UI/UX Developer"];
-  const { text, cursorVisible } = useTypingEffect(words, 100, 50);
+  const { text, cursorVisible } = useTypingEffect(words, 100, 25);
   const { theme, toggleTheme } = useTheme();
   const headerRef = useRef(null); // Ref for the header element
 

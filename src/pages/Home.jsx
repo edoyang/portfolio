@@ -44,7 +44,7 @@ const Home = () => {
         <Project />
       </div>
       <div className="blog">
-        <p>Recent Post here</p>
+        <h2 className="font-title">Blog</h2>
         <div className="sliding-left">
           <RecentPost />
         </div>

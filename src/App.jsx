@@ -16,11 +16,11 @@ const App = () => {
     <div className={theme === "dark" ? "dark-mode" : ""}>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/display-project/:id" element={<DisplayProject />} />
-        <Route path="/display-post/:id" element={<DisplayPost />} />
+        <Route path="" element={<Home />} />
+        <Route path="project" element={<Project />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="display-project/:id" element={<DisplayProject />} />
+        <Route path="display-post/:id" element={<DisplayPost />} />
       </Routes>
       <Footer />
     </div>

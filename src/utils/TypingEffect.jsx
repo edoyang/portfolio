@@ -1,6 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-const useTypingEffect = (words, typingSpeed = 150, deletingSpeed = 75, pauseDuration = 2000) => {
+const useTypingEffect = (
+  words,
+  typingSpeed = 150,
+  deletingSpeed = 75,
+  pauseDuration = 2000
+) => {
   const [idx, setIdx] = useState(0);
   const [subIdx, setSubIdx] = useState(0);
   const [reverse, setReverse] = useState(false);
@@ -29,15 +34,28 @@ const useTypingEffect = (words, typingSpeed = 150, deletingSpeed = 75, pauseDura
       return () => clearTimeout(cursorTimeout);
     }
 
-    const timeout = setTimeout(() => {
-      setSubIdx((prevSubIdx) => prevSubIdx + (reverse ? -1 : 1));
-    }, reverse ? deletingSpeed : typingSpeed);
+    const timeout = setTimeout(
+      () => {
+        setSubIdx((prevSubIdx) => prevSubIdx + (reverse ? -1 : 1));
+      },
+      reverse ? deletingSpeed : typingSpeed
+    );
 
     return () => {
       clearTimeout(timeout);
       clearTimeout(cursorTimeout);
     };
-  }, [subIdx, idx, reverse, isPausing, words, typingSpeed, deletingSpeed, pauseDuration, cursorVisible]);
+  }, [
+    subIdx,
+    idx,
+    reverse,
+    isPausing,
+    words,
+    typingSpeed,
+    deletingSpeed,
+    pauseDuration,
+    cursorVisible,
+  ]);
 
   // Return both the text and the cursor visibility status
   return { text: `${words[idx].substring(0, subIdx)}`, cursorVisible };

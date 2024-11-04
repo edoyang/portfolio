@@ -12,6 +12,7 @@
     font-weight: bold;
 
     a {
+      min-width: 100px;
       color: var(--black);
       text-decoration: none;
     }
@@ -69,7 +70,7 @@
       display: block;
       height: 2px;
       width: 100%;
-      background: #333;
+      background: var(--black);
       transition: all 0.3s ease-in-out;
     }
 
