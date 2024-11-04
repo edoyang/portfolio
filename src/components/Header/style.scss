@@ -10,12 +10,9 @@
   .logo {
     font-size: var(--font-md);
     font-weight: bold;
-
-    a {
-      min-width: 100px;
-      color: var(--black);
-      text-decoration: none;
-    }
+    min-width: 180px;
+    text-decoration: none;
+    color: var(--black);
   }
 
   .menu {

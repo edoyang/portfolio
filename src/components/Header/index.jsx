@@ -39,14 +39,12 @@ const Header = () => {
 
   return (
     <div className="header" ref={headerRef}>
-      <div className="logo">
-        <Link to="/">
-          <p>
-            {text}
-            <span className={`cursor ${cursorVisible ? "blink" : ""}`}>|</span>
-          </p>
-        </Link>
-      </div>
+      <Link className="logo" to="/">
+        <p>
+          {text}
+          <span className={`cursor ${cursorVisible ? "blink" : ""}`}>|</span>
+        </p>
+      </Link>
       <div className={`menu ${isActive ? "active" : ""}`}>
         <Link to="/">Home</Link>
         <Link to="/project">Projects</Link>
