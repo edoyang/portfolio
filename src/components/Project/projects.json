@@ -12,7 +12,7 @@
   {
     "id": 2,
     "title": "ABCProperty",
-    "date": "2020",
+    "date": "2023",
     "tech": "HTML, CSS, JS, Node.js, Express, MongoDB, EJS, MVC, Vercel",
     "repo": "https://github.com/edoyang/abcproperty-react",
     "link": "https://edoyang.github.io/abcproperty-react/",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "title": "Zebb",
-    "date": "2020",
+    "date": "2024",
     "tech": "HTML, CSS, JS",
     "repo": "https://github.com/edoyang/ICTPRG535/",
     "link": "https://edoyang.github.io/ICTPRG535/",
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "title": "Booktopia",
-    "date": "2020",
+    "date": "2024",
     "tech": "PHP",
     "repo": "https://github.com/edoyang/booktopia",
     "link": "https://edoyang.github.io/booktopia/",
@@ -62,11 +62,21 @@
   {
     "id": 7,
     "title": "Stocker",
-    "date": "2020",
+    "date": "2024",
     "tech": "MongoDB, Express, React, Node.js, Git + Flutter",
     "repo": "https://github.com/edoyang/stocker",
     "link": "https://edoyang.github.io/stocker/",
     "description": "Front-End: HTML, CSS, JS \n Back-End: Node.js, Express, MongoDB \n\n Stocker is a simple and elegant website that showcases my proficiency in frontend development. The project involved creating a responsive and visually appealing website using HTML, CSS, and JavaScript. The website features a clean design and user-friendly interface, highlighting my ability to create engaging web pages.\n\n Key Learning Highlights: \n\n Responsive Design: Developed a mobile-friendly website with a responsive layout and design. \n HTML & CSS: Gained hands-on experience in HTML and CSS, mastering advanced styling techniques. \n JavaScript: Enhanced my skills in JavaScript, implementing interactive features and animations. \n \n Stocker was a valuable project that allowed me to refine my frontend development skills and create a visually appealing website. The project served as a testament to my passion for web development and design.",
     "img": "projects/no-image.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Freshcart",
+    "date": "2024",
+    "tech": "MongoDB, Express, React, Node.js, Git",
+    "repo": "https://github.com/edoyang/freshcart",
+    "link": "https://freshcart-client.vercel.app/",
+    "description": "Front-End: HTML, CSS, JS \n Back-End: Node.js, Express, MongoDB \n\n Freshcart is a simple and elegant website that showcases my proficiency in frontend development. The project involved creating a responsive and visually appealing website using HTML, CSS, and JavaScript. The website features a clean design and user-friendly interface, highlighting my ability to create engaging web pages.\n\n Key Learning Highlights: \n\n Responsive Design: Developed a mobile-friendly website with a responsive layout and design. \n HTML & CSS: Gained hands-on experience in HTML and CSS, mastering advanced styling techniques. \n JavaScript: Enhanced my skills in JavaScript, implementing interactive features and animations. \n \n Freshcart was a valuable project that allowed me to refine my frontend development skills and create a visually appealing website. The project served as a testament to my passion for web development and design.",
+    "img": "projects/Freshcart.png"
   }
 ]
